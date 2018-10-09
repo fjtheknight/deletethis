@@ -37,7 +37,12 @@ main {
     border: 3px solid #5271ff;
     border-radius: 20px;
 margin: 50px 5px 5px 5px;
+    float: center;
+
 ;}
+#gsignin {
+float: right;
+}
 
 #friends {
     flex: 19%;
