@@ -21,14 +21,15 @@ main {
 }
 
 
-#personal_info {
-    flex: 50%;
+#name {
+    flex: 30%;
     padding: 20px;
     height : 30%
 }
 
 #info {
-
+    display: flex;
+    flex-wrap: wrap;
     background-color: #fff2ff;
     padding: 20px;
     text-align : center;
@@ -46,6 +47,8 @@ float: right;
 }
 
 #picture {
+            flex: 30%;
+
     border-radius: 50%;
     width: 70%;
     height: 70%;
