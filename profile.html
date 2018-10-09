@@ -29,7 +29,7 @@
 </header>
 <main><!--buildscriptdivider$header-content--><!-- your content goes here-->
 
-<section id="info" onload="onSignIn">
+<section id="info" onload="myFct()">
     Your info:<br>
     <div id="picture">
 
@@ -39,10 +39,15 @@
     </div>
     
         <script>
-                function onSignIn(googleUser) {
-                        var profile = googleUser.getBasicProfile();
+                function myFct() {
                         document.getElementById('picture').innerHTML =  "<img src='" + profile.getImageUrl() + "'/><br>";
                         document.getElementById('name').innerHTML = profile.getName() + "<br>";
+                        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                        console.log('Full Name: ' + profile.getName());
+                        console.log('Given Name: ' + profile.getGivenName());
+                        console.log('Family Name: ' + profile.getFamilyName());
+                        console.log("Image URL: " + profile.getImageUrl());
+                        console.log("Email: " + profile.getEmail());
         }
         </script>
         <a href="#" onclick = "signOut();">Sign out</a>
