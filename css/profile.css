@@ -38,12 +38,15 @@ main {
     border-radius: 20px;
 margin: 50px 5px 5px 5px;
     float: center;
-
-;}
+}
 #gsignin {
         flex: 30%;
 
 float: right;
+}
+
+#picture {
+    border-radius: 50%;
 }
 
 #friends {
