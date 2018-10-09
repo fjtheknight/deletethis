@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/profile.css" />
 <title>E-vent</title>
 </head>
-<body>
+<body onload="onSignIn">
 <header>
 <!--logo here-->
 <nav>
@@ -29,7 +29,7 @@
 </header>
 <main><!--buildscriptdivider$header-content--><!-- your content goes here-->
 
-<section id="info" onload="myFct()">
+<section id="info">
     Your info:<br>
     <div id="picture">
 
@@ -39,7 +39,11 @@
     </div>
     
         <script>
-                function myFct() {
+                function onSignIn(googleUser) {
+
+                        console.log('loaded');
+                        var profile = googleUser.getBasicProfile();
+
                         document.getElementById('picture').innerHTML =  "<img src='" + profile.getImageUrl() + "'/><br>";
                         document.getElementById('name').innerHTML = profile.getName() + "<br>";
                         console.log("ID: " + profile.getId()); // Don't send this directly to your server!
