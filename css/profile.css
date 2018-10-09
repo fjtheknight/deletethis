@@ -55,11 +55,7 @@ float: right;
     
 }
 #picture {
-    flex: 70%;
-    border-radius: 20%;
-    width: 80%;
-    height: 80%;
-    
+   
 }
 
 #friends {
