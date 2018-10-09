@@ -1,34 +1,78 @@
 <!DOCTYPE html>
-<html>
-        <head>
-                <meta name="google-signin-scope" content="profile email">
-                <meta name="google-signin-client_id" content="365679910149-388t7l2qc3kflnj52f01mk4bku5ffiis.apps.googleusercontent.com">
-                <script src="https://apis.google.com/js/platform.js" async defer></script>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/core.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/index.css" />
+<title>E-vent</title>
+</head>
+<body>
+<header>
+<!--logo here-->
+<nav>
+<li><a id="nav-j" href="#"><span>Join</span></a></li>
+<li><a id="nav-h" href="help.html#"><span>Help</span></a></li>
+<li><a id="nav-c" href="ContactUs.html#"><span>Contact us</span></a></li>
+<li><a id="nav-a" href="AboutUs.html#"><span>About us</span></a></li>
+<li>
+<a id="nav-w" href="#"><span>Welcome</span></a>
+<div>
+<a href="#"><span>Product</span></a>
+<a href="#"><span>Features</span></a>
+<a href="#"><span>Events</span></a>
+<a href="#"><span>Testimonials</span></a>
+</div>
+</li>
+</nav>
+</header>
+<main><!--buildscriptdivider$header-content--><section id="hero">
+<div class="navsize"></div>
+<h1 style="margin-top: 0px;">Hello World!</h1>
+<p>E-vent's website loads! It's under construction right now...</p>
 
-                <title>
-                E-VENT webpage test
-                </title>
-        </head>
-
-        <body>
-        some text in the body
-        <div id="info"></div>
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
-
-        <script>
-                function onSignIn(googleUser) {
-                        var profile = googleUser.getBasicProfile();
-                        document.getElementById('info').innerHTML = profile.getName() + "<br>" + "<a href='mailto:'" + profile.getEmail() + "</a>" + "<br>" + "<img src='" + profile.getImageUrl() + "'/>";
-        }
-        </script>
-        <a href="#" onclick = "signOut();">Sign out</a>
-        <script>
-                function signOut(){
-                        var auth2 = gapi.auth2.getAuthInstance();
-                        auth2.signOut().then(function() {
-                                document.getElementById('info').innerHTML='';
-                        });
-                }
-        </script>
-        </body>
+01</br>
+02</br>
+03</br>
+04</br>
+05</br>
+06</br>
+07</br>
+08</br>
+09</br>
+10</br>
+11</br>
+12</br>
+13</br>
+14</br>
+15</br>
+16</br>
+17</br>
+18</br>
+19</br>
+20</br>
+21</br>
+22</br>
+23</br>
+24</br>
+25</br>
+26</br>
+27</br>
+28</br>
+29</br>
+30</br>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section><!--buildscriptdivider$content-footer--></main>
+<footer>
+<!--company info goes here-->
+</footer>
+</body>
 </html>
