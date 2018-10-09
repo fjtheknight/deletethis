@@ -29,16 +29,32 @@
 </header>
 <main><!--buildscriptdivider$header-content--><!-- your content goes here-->
 
-<section id="info">
+<section id="info" onload="onSignIn()">
     Your info:<br>
     <div id="picture">
 
 
     </div>
-    <div id="personal_info">
-        name :<br>
-        email :<br>
-    </dir>
+    <div id="name">
+    </div>
+    
+        <script>
+                function onSignIn(googleUser) {
+                        var profile = googleUser.getBasicProfile();
+                        document.getElementById('picture').innerHTML =  "<img src='" + profile.getImageUrl() + "'/><br>";
+                        document.getElementById('name').innerHTML = profile.getName() + "<br>";
+        }
+        </script>
+        <a href="#" onclick = "signOut();">Sign out</a>
+        <script>
+                function signOut(){
+                        var auth2 = gapi.auth2.getAuthInstance();
+                        auth2.signOut().then(function() {
+                                document.getElementById('picture').innerHTML='';
+                                document.getElementById('name').innerHTML='';
+                        });
+                }
+        </script>
 
 </section>
 <section class="row">
