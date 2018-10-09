@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/profile.css" />
 <title>E-vent</title>
 </head>
-<body onload="onSignIn">
+<body>
 <header>
 <!--logo here-->
 <nav>
@@ -37,6 +37,7 @@
     </div>
     <div id="name">
     </div>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
     
         <script>
                 function onSignIn(googleUser) {
