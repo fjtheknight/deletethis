@@ -17,5 +17,10 @@ function replace2() {
 }
 
 function replace() {
-	document.getElementById('schedular').innerHTML='ty';        
+	document.getElementById('schedular').innerHTML='ty';
+	setTimeout(refresh, 3000);
+}
+
+function refresh() {
+    window.location.reload();
 }
