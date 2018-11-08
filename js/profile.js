@@ -1,16 +1,21 @@
 function listToRadioForm(l) {
-	var text = "<form>";
+	var text = "<form id='rf'>";
 
     var i;
-    for (i = 0; i < free.length; i++) { 
-        text += "<input type='radio' name='time' value="+free[i]+">"+free[i]+"<br>";
+    for (i = 0; i < l.length; i++) { 
+        text += "<input type='radio' name='time' value="+l[i]+">"+l[i]+"<br>";
     }
     text += "<button type='submit' onclick='replace();'>show</button></form>";
     return text;              
 }
-function replace() {
-	document.getElementById('testjs').innerHTML='ty';        
+
+function replace2() {
+    var free = ["de a à b", "de c à d", "de e à f"];
+    var text;
+    text=listToRadioForm(free);
+	document.getElementById("schedular").innerHTML=text;
 }
-var free = ["de a à b", "de c à d", "de e à f"];
-text=listToRadioForm(free)
-document.getElementById("testjs").innerHTML=text;
+
+function replace() {
+	document.getElementById('schedular').innerHTML='ty';        
+}
