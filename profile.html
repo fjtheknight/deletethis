@@ -76,20 +76,29 @@
 </section>
 <section class="row">
 <section id="friends">
-    your friends :
-
-
+    <form>         
+        <input type="checkbox" name="friend[]" value="friend1"> friend1<br>
+        <input type="checkbox" name="friend[]" value="friend2"> friend2<br>
+        <input type="checkbox" name="friend[]" value="friend3"> friend3<br>
+        <input type="checkbox" name="friend[]" value="friend4"> friend4<br>
+        <input type="checkbox" name="friend[]" value="friend5"> friend5<br>
+    </form>
 </section>
 
 <section id="create_event">
-    <div id="create">
-        choose date...
+    <div id="schedular">
+        <form>
+            Start: <input type="date" name="sdate">
+            End: <input type="date" name="edate"><br>
+            Min time:
+            <input type="time" name="mintime">
+            Max time:
+            <input type="time" name="maxtime"><br>
+            <button type="submit" onclick="replace2();">show</button>
+        </form>
     </div>
     <div id="event">
         possible
-    </div>
-    <div id="testjs">
-        
     </div>
 
 </section>
