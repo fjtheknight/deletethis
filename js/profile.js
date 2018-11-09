@@ -10,14 +10,14 @@ function listToRadioForm(l) {
 }
 
 function replace2() {
-    var free = ["de a à b", "de c à d", "de e à f"];
+    var free = ["de 10-11-2018 13:00 à de 10-11-2018 13:00", "de c de 10-11-2018 13:00 à de 10-11-2018 16:00", "de de 11-11-2018 10:00 à de 11-11-2018 13:00"];
     var text;
     text=listToRadioForm(free);
 	document.getElementById("schedular").innerHTML=text;
 }
 
 function replace() {
-	document.getElementById('schedular').innerHTML='ty';
+	document.getElementById('schedular').innerHTML='Your event has been scheduled between 10-11-2018 13:00 and 10-11-2018 13:00';
 	setTimeout(refresh, 3000);
 }
 
