@@ -10,7 +10,7 @@ function listToRadioForm(l) {
 }
 
 function replace2() {
-    var free = ["de 10-11-2018 13:00 à de 10-11-2018 13:00", "de c de 10-11-2018 13:00 à de 10-11-2018 16:00", "de de 11-11-2018 10:00 à de 11-11-2018 13:00"];
+    var free = ["de 10-11-2018 13:00 à de 10-11-2018 13:00", "de 10-11-2018 13:00 à de 10-11-2018 16:00", "de 11-11-2018 10:00 à de 11-11-2018 13:00"];
     var text;
     text=listToRadioForm(free);
 	document.getElementById("schedular").innerHTML=text;
