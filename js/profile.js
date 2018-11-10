@@ -23,7 +23,7 @@ function replace() {
 
 function replace3() {
 	document.getElementById('schedular').innerHTML='Please wait...';
-	setTimeout(replace2, 3000);
+	setTimeout(replace2, 2000);
 }
 
 function refresh() {
@@ -53,5 +53,5 @@ function signOut(){
 		document.getElementById('name').innerHTML='';
 		document.location.href="/deletethis";
 
-	};
+	});
 }
